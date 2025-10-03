@@ -10,5 +10,89 @@
     <header>
       <img src="assets/images/lamborghini_logo.png" alt="lamborghini logo" />
     </header>
+    <section class="hero_section">
+      <div class="carousel_wrapper">
+        <div class="carousel_slide">
+          <video autoplay muted loop playsinline>
+            <source
+              src="./assets/videos/revuelto_video_one.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="slide_overlay"></div>
+          <div class="slide_content">
+            <h1 class="slide_title">REVUELTO</h1>
+            <p class="slide_subtitle">The Future of Super Sports Cars</p>
+            <p class="slide_description">
+              Experience the first high-performance hybrid v12. Where 1,001
+              horsepower meets electrified innovation.
+            </p>
+            <button class="slide_cta">Start Exploring</button>
+          </div>
+        </div>
+        <div class="carousel_slide">
+          <img
+            src="./assets/images/revuelto_photo_one.avif"
+            alt="revuelto display one"
+          />
+          <div class="slide_overlay"></div>
+          <div class="slide_content">
+            <h1 class="slide_title">UNLEASHED POWER</h1>
+            <p class="slide_subtitle">1,001 HP Hybrid v12</p>
+            <p class="slide_description">
+              0-60mph in 2.5 seconds. A symphony of combustion and electric
+              motors delivering unprecedented performance.
+            </p>
+            <button class="slide_cta">Get Started</button>
+          </div>
+        </div>
+        <div class="carousel_slide">
+          <img
+            src="./assets//images/revuelto_photo_two.avif"
+            alt="revuelto display two"
+          />
+          <div class="slide_overlay"></div>
+          <div class="slide_content">
+            <h1 class="slide_title">AERODYNAMIC ARTISTRY</h1>
+            <p class="slide_subtitle">Forms Follow Function</p>
+            <p class="slide_description">
+              Carbon fiber monocoque chassis. Every curve sculpted by air. Every
+              line designed for dominance.
+            </p>
+            <button class="slide_cta">Join The Revolution</button>
+          </div>
+        </div>
+        <div class="carousel_slide">
+          <img
+            src="./assets/images/revuelto_photo_three.avif"
+            alt="revuelto display three"
+          />
+          <div class="slide_overlay"></div>
+          <div class="slide_content">
+            <h1 class="slide_title">HYBRID REVOLUTION</h1>
+            <p class="slide_subtitle">Electric Meets v12 Legacy</p>
+            <p class="slide_description">
+              Three electric motors. Rear-wheel steering. The perfect balance
+              between Lamborghini tradition and tomorrow's technology.
+            </p>
+            <button class="slide_cta">Discover More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation buttons -->
+      <button type="button" class="carousel_arrow prev" onclick="moveSlide(-1)">
+        <img src="./assets/arrow-left.svg" alt="prev arrow" />
+      </button>
+      <button type="button" class="carousel_arrow next" onclick="moveSlide(1)">
+        <img src="./assets/arrow-right.svg" alt="next arrow" />
+      </button>
+
+      <!-- Navigation dots -->
+      <div class="carousel_navigation"></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./scripts.js"></script>
   </body>
 </html>
