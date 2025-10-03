@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "FoglithenPCS";
+  src: url("./assets/fonts/FoglihtenPCS-068.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "FoglithenPCS", fantasy;
+  background-color: #fff;
+}
+
+header {
+  background: #fff;
+  height: fit-content;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 3px #00000027;
+}
+
+header img {
+  height: 85px;
+}
