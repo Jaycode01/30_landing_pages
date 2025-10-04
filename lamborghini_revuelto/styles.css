@@ -227,6 +227,44 @@ header img {
 .stats_label {
   font-size: 20px;
 }
+
+.gallery_container {
+  margin-top: 100px;
+}
+
+.gallery_container .heading {
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: 2%;
+}
+
+.gallery_container .heading div {
+  background-color: #ffa500;
+  width: 50px;
+  height: 100px;
+}
+
+.gallery_container .heading h2 {
+  position: absolute;
+  font-size: 40px;
+  top: 40%;
+  left: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  gap: 2px;
+}
+
+.gallery .item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
 /* Smaller Screens like Tablet and Mobile Devices */
 @media (max-width: 768px) {
 }
