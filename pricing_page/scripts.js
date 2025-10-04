@@ -38,6 +38,10 @@ function calculateMonthlyCost() {
 
   enterprisePrice = 50;
   enterprisePriceText.innerHTML = `$${enterprisePrice}/`;
+
+  subDurations.forEach((sub_Duration) => {
+    sub_Duration.innerHTML = "month";
+  });
 }
 
 monthlyBill.addEventListener("click", () => {
