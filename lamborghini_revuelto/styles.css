@@ -109,6 +109,7 @@ header img {
   border: none;
   background-color: #ffa500;
   color: #fff;
+  cursor: pointer;
   font-size: 17px;
 }
 
@@ -265,6 +266,81 @@ header img {
   cursor: pointer;
 }
 
+.design_philosophy {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 2%;
+  margin-top: 100px;
+}
+
+.design_philosophy > div {
+  width: 50%;
+}
+
+.car_structure_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.revuelto_logo {
+  width: 300px;
+}
+
+.revuelto_structure {
+  width: 100%;
+  object-fit: cover;
+}
+
+.text_section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text_section > .heading {
+  font-size: 30px;
+}
+
+.text_section > p {
+  font-size: 18px;
+}
+
+.quote_wrapper {
+  margin-top: 20px;
+  justify-self: end;
+}
+
+.quote_wrapper > .quote {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  font-size: 18px;
+}
+
+.quote_wrapper > .quote > img {
+  transform: rotate(180deg);
+  width: 17px;
+}
+
+.quote_wrapper > .quote > span {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.quoter {
+  justify-self: end;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding: 25px;
+}
 /* Smaller Screens like Tablet and Mobile Devices */
 @media (max-width: 768px) {
 }
