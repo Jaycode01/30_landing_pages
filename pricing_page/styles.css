@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Funny Display";
+  src: url("./assets/fonts/FunnelDisplay-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funny Display", fantasy;
+  background-color: #eef8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pricing_container > h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.pricing_container > p {
+  font-size: 18px;
+}
+
+.pricing_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.pricing_card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  height: fit-content;
+  width: 370px;
+  text-align: left;
+  cursor: pointer;
+  transition: scale 0.6s ease;
+}
+
+.pricing_card:hover {
+  scale: 1.05;
+}
+
+.pricing_card .title {
+  font-size: 30px;
+}
+
+.main_pricing_details {
+  margin-top: 25px;
+}
+
+.main_pricing_details > .cost {
+  margin-bottom: 20px;
+}
+
+.main_pricing_details > .cost > .amount {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  border-top: 1px solid #808080;
+}
+
+.features > .heading {
+  font-weight: 600;
+}
+
+.features > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.feature img {
+  width: 15px;
+}
+
+.pricing_card > button {
+  margin-top: 25px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  align-items: self-end;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.pricing_card:nth-child(2) > button {
+  background-color: #cae8ff;
+}
