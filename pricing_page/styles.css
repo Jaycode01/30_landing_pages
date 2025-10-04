@@ -31,6 +31,48 @@ body {
   font-size: 18px;
 }
 
+.timeline_toggle {
+  background-color: #caeaff;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 100px;
+  position: relative;
+  margin: 30px auto;
+  display: flex;
+}
+
+.slider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  height: calc(100% - 10px);
+  background: white;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.timeline_toggle button {
+  flex: 1;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  font-family: inherit;
+  color: #808080;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+  transition: color 0.3s ease;
+}
+
+.timeline_toggle button.active {
+  color: #333;
+  font-weight: 600;
+}
+
 .pricing_cards {
   display: flex;
   flex-direction: row;
@@ -45,12 +87,21 @@ body {
   height: fit-content;
   width: 370px;
   text-align: left;
+  box-shadow: 0px 5px 5px #0000001f;
+  border: 1px solid #80808070;
   cursor: pointer;
   transition: scale 0.6s ease;
 }
 
-.pricing_card:hover {
-  scale: 1.05;
+.recommendation_indication {
+  background-color: #caeaff;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.recommendation_indication > p {
+  padding: 10px;
+  font-size: 14px;
 }
 
 .pricing_card .title {
@@ -111,6 +162,7 @@ body {
   cursor: pointer;
 }
 
-.pricing_card:nth-child(2) > button {
-  background-color: #cae8ff;
+.pro-cta {
+  background-color: #388fd1;
+  color: #fff;
 }
