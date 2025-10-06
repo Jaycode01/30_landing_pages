@@ -15,3 +15,73 @@ body {
   font-family: "Funny Display", fantasy;
   background-color: #fff;
 }
+
+header {
+  background-color: #fff;
+  padding: 20px 2%;
+  width: 100%;
+}
+
+header .menu {
+  cursor: pointer;
+}
+
+header > .ctas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .ctas > .quick_cta {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+header > .ctas .search {
+  cursor: pointer;
+}
+
+.divider {
+  width: 2px;
+  height: 15px;
+  background-color: #808080;
+}
+
+header .quick_cta > .cart {
+  position: relative;
+  cursor: pointer;
+}
+
+header .quick_cta > .cart > span {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 50%;
+  top: -10px;
+  right: -7px;
+}
+
+header > nav > ul {
+  display: flex;
+  padding: 30px 0;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+header > nav > ul > li {
+  list-style-type: none;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: #333;
+}
