@@ -19,7 +19,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
 }
 
 .pricing_container > h1 {
@@ -95,8 +95,15 @@ body {
 
 .recommendation_indication {
   background-color: #caeaff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 5px;
   border-radius: 25px;
+}
+
+.recommendation_indication > .pricing_card {
+  margin: 0 auto;
 }
 
 .recommendation_indication > p {
@@ -165,4 +172,15 @@ body {
 .pro-cta {
   background-color: #388fd1;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 40px;
+  }
+
+  .pricing_cards {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
