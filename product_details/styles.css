@@ -85,3 +85,29 @@ header > nav > ul > li > a {
   text-decoration: none;
   color: #333;
 }
+
+.product_details {
+  padding: 50px 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product_views {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_views img {
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.product_views img:hover {
+  border: 1.5px solid #808080;
+  scale: 1.05;
+  transition: border 0.3s ease-in-out;
+}
