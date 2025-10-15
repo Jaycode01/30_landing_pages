@@ -5,6 +5,11 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/FunnelDisplay.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,4 +50,115 @@ main {
   border-radius: 50%;
   display: flex;
   align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  width: 70%;
+}
+
+main > p {
+  width: 40%;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.get_notified_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  background-color: #fff;
+  margin: 20px 0 0 20px;
+  width: 80%;
+  box-shadow: 0px 10px 20px #00000015;
+  padding: 40px;
+  border-radius: 40px;
+}
+
+.joined_users {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+.joined_users img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.joined_users img:nth-child(2) {
+  left: 28px;
+}
+
+.joined_users img:nth-child(3) {
+  left: 56px;
+}
+
+.get_notified_container p {
+  text-align: left;
+}
+
+.joined_users > p {
+  font-family: "Funnel Display", fantasy;
+  position: absolute;
+  left: 84px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  border: 0.7px solid #0000001c;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+
+.get_notified_container > h2 {
+  margin-top: 30px;
+}
+
+.joining_box {
+  display: flex;
+  gap: 0;
+  background-color: #f2f1f6;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.joining_box > input {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin: auto 0;
+  background: inherit;
+}
+
+.joining_box button {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-family: inherit;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 15px;
+  border: none;
+  width: 205px;
+}
+
+.joining_box button img {
+  width: auto;
+  height: 22px;
 }
