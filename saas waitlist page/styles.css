@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Jumper";
+  src: url("./fonts/Jumper_thin.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jumper", fantasy;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  align-items: center;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  background-color: #edeaef;
+  padding: 10px;
+  border-radius: 30px;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge > span:first-child {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
