@@ -7,46 +7,61 @@
     <title>Countdown page for sales</title>
   </head>
   <body>
-    <section class="timer_container">
-      <div class="time_section hour_time_section">
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
+    <section class="clock-container">
+      <div class="time-section">
+        <div class="digits">
+          <div class="flip-card" id="hour-tens">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
+          <div class="flip-card" id="hour-ones">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
         </div>
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
-        </div>
-        <span class="label">HOURS</span>
+        <div class="label">Hours</div>
       </div>
 
       <div class="separator">:</div>
 
-      <div class="time_section minutes_time_section">
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
+      <div class="time-section">
+        <div class="digits">
+          <div class="flip-card" id="min-tens">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
+          <div class="flip-card" id="min-ones">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
         </div>
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
-        </div>
-        <span class="label">MINUTES</span>
+        <div class="label">Minutes</div>
       </div>
 
       <div class="separator">:</div>
 
-      <div class="time_section seconds_time_section">
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
+      <div class="time-section">
+        <div class="digits">
+          <div class="flip-card" id="sec-tens">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
+          <div class="flip-card" id="sec-ones">
+            <div class="flip-card-inner">
+              <div class="card-face">0</div>
+            </div>
+          </div>
         </div>
-        <div class="flip_card">
-          <div class="top">0</div>
-          <div class="bottom">0</div>
-        </div>
-        <span class="label">SECONDS</span>
+        <div class="label">Seconds</div>
       </div>
     </section>
+
+    <!-- Scripts -->
+    <script src="./scripts.js"></script>
   </body>
 </html>
