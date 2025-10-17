@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Appointment Booking Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">🏥</div>
+        <div class="doctor-info">
+          <div class="avatar">DN</div>
+          <div class="doctor-details">
+            <h3>Dr Nashant Chimpies</h3>
+            <p>Sole Care Clinic</p>
+          </div>
+        </div>
+        <div style="width: 40px"></div>
+      </div>
+
+      <div class="nav-tabs">
+        <a href="#" class="nav-tab active">Appointments</a>
+        <a href="#" class="nav-tab">Walk-in</a>
+      </div>
+
+      <div class="content">
+        <div class="sidebar">
+          <div class="breadcrumb">Home > Appointments</div>
+
+          <div class="calendar-header">
+            <div class="month-year">OCT 2025</div>
+            <div class="month-nav">
+              <button id="prevMonth">‹</button>
+              <button id="nextMonth">›</button>
+            </div>
+          </div>
+
+          <div class="calendar">
+            <div class="calendar-grid" id="calendar"></div>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <div class="time-section">
+            <div class="section-header">
+              <div class="section-title">
+                <img src="./assets/sunrise.svg" alt="sunrise" />
+                <div>
+                  <h3>Morning</h3>
+                  <p>9:00 AM to 12:00 PM</p>
+                </div>
+              </div>
+              <button class="add-btn">+ Add Slots</button>
+            </div>
+            <div class="time-slots" id="morningSlots"></div>
+          </div>
+
+          <div class="time-section">
+            <div class="section-header">
+              <div class="section-title">
+                <img src="./assets/cloud_moon.svg" alt="cloud_moon" />
+                <div>
+                  <h3>Evening</h3>
+                  <p>5:00 PM to 09:00 PM</p>
+                </div>
+              </div>
+              <button class="add-btn">+ Add Slots</button>
+            </div>
+            <div class="time-slots" id="eveningSlots"></div>
+          </div>
+
+          <div class="waiting-list">
+            <div class="waiting-list-info">
+              <img src="./assets/timer.svg" alt="timer" />
+              <span>Waiting list</span>
+            </div>
+            <button class="add-btn">+ Add to Wait List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
