@@ -1,11 +1,9 @@
 function updateClock() {
-  // Set your target date and time here
-  const targetDate = new Date("2025-10-17 23:59:59"); // Change this to your target
+  const targetDate = new Date("2025-10-17 23:59:59");
 
   const now = new Date();
   const diff = targetDate - now;
 
-  // If countdown is finished
   if (diff <= 0) {
     updateDigit("hour-tens", "0");
     updateDigit("hour-ones", "0");
