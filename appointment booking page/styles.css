@@ -180,6 +180,9 @@ body {
   font-weight: 600;
 }
 
+.day.today {
+  border: 1px solid #333;
+}
 .day.empty {
   cursor: default;
 }

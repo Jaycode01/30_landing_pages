@@ -42,6 +42,9 @@ function selectSlot(time) {
   renderTimeSlots(eveningTimes, "eveningSlots");
 }
 
+let selectedDate = 18;
+let currentDate = 18;
+
 function renderCalendar() {
   const calendar = document.getElementById("calendar");
   const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -88,12 +91,26 @@ function renderCalendar() {
   html += daysInMonth
     .map((day, i) => {
       if (day === "") return '<div class="day empty"></div>';
-      if (day === 18) return `<div class="day selected">${day}</div>`;
-      return `<div class="day">${day}</div>`;
+
+      let classes = "day";
+      if (day === selectedDate) classes += " selected";
+      if (day === currentDate) classes += " today";
+
+      return `<div class="${classes}" onclick="selectDate(${day})">${day}</div>`;
     })
     .join("");
 
   calendar.innerHTML = html;
+}
+
+function selectDate(date) {
+  selectedDate = date;
+  renderCalendar();
+}
+
+function selectDate(date) {
+  selectedDate = date;
+  renderCalendar();
 }
 
 renderCalendar();
