@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/FunnelDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funnel Display", fantasy;
+  background: #fff;
+  min-height: 100vh;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #333;
+  margin-bottom: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.header p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.category-header img {
+  height: 50px;
+  width: auto;
+}
+
+/* .category-icon {
+  font-size: 28px;
+} */
+
+.category-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d3748;
+  font-family: "Montserrat";
+}
+
+.category-card .subtitle {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 25px;
+}
+
+.download-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #2d3748;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #edf2f7;
+  border-color: #cbd5e0;
+  transform: translateX(5px);
+}
+
+.btn-label {
+  font-size: 14px;
+}
+
+.btn-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: #2d3748;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.btn-badge.microsoft {
+  background: #0078d4;
+}
+
+.btn-badge.apple {
+  background: #000000;
+}
+
+.btn-badge.linux {
+  background: #f7941e;
+}
+
+.btn-badge.google {
+  background: #34a853;
+}
+
+.btn-badge.samsung {
+  background: #1428a0;
+}
+
+.btn-badge.huawei {
+  background: #e6001e;
+}
+
+.btn-badge.amazon {
+  background: #ff9900;
+}
+
+.btn-badge.firefox {
+  background: #ff6611;
+}
+
+.btn-badge.chrome {
+  background: #4285f4;
+}
+
+.btn-badge.opera {
+  background: #ff1b2d;
+}
+
+.btn-badge.edge {
+  background: #0078d7;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .download-grid {
+    grid-template-columns: 1fr;
+  }
+}
