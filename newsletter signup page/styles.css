@@ -15,6 +15,8 @@ body {
   flex-direction: column;
   align-items: center;
   max-height: 100vh;
+  color: #333;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -23,6 +25,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 40%;
+  margin-bottom: 100px;
   gap: 0;
   justify-content: center;
 }
@@ -34,7 +37,7 @@ main h1 {
   font-size: 60px;
 }
 
-.text {
+main .text {
   text-align: center;
 }
 
@@ -53,6 +56,85 @@ main h1 {
   outline: none;
   font-size: 16px;
   width: 100%;
-  padding: 7px;
+  padding: 7px 0;
   font-family: inherit;
+}
+
+footer {
+  border-top: 1px solid #808080;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer .main_target {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.left_section .text {
+  width: 400px;
+  font-size: 15px;
+}
+
+.left_section .socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.left_section .socials > img {
+  cursor: pointer;
+}
+
+.right_section {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right_section div ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.right_section div ul li {
+  cursor: pointer;
+}
+
+.right_section div ul h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer .bottom_side {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.bottom_side a {
+  color: #333;
+  text-decoration: none;
 }
