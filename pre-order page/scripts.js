@@ -25,7 +25,6 @@ function goToSlide(index) {
   updateCarousel();
 }
 
-// Indicator click events
 document.querySelectorAll(".indicator").forEach((indicator) => {
   indicator.addEventListener("click", (e) => {
     const index = parseInt(e.target.dataset.index);
@@ -33,7 +32,6 @@ document.querySelectorAll(".indicator").forEach((indicator) => {
   });
 });
 
-// Product card click events
 document.querySelectorAll(".product-card").forEach((card) => {
   card.addEventListener("click", (e) => {
     const index = parseInt(e.currentTarget.dataset.index);
@@ -41,7 +39,6 @@ document.querySelectorAll(".product-card").forEach((card) => {
   });
 });
 
-// Keyboard navigation
 document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") {
     currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
@@ -52,23 +49,20 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Auto-play (optional)
 let autoplayInterval;
 function startAutoplay() {
   autoplayInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     updateCarousel();
-  }, 4000);
+  }, 10000);
 }
 
 function stopAutoplay() {
   clearInterval(autoplayInterval);
 }
 
-// Start autoplay
 startAutoplay();
 
-// Stop autoplay on user interaction
 document
   .querySelector(".carousel-container")
   .addEventListener("mouseenter", stopAutoplay);
