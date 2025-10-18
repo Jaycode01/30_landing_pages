@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/FunnelDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funnel Display", fantasy;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #1d1d1f;
+  margin-bottom: 60px;
+  letter-spacing: -1px;
+}
+
+.carousel-container {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.product-card {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.product-card.side {
+  transform: scale(0.75);
+  opacity: 0.5;
+  filter: blur(2px);
+}
+
+.product-card.center {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.product-image {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.indicator {
+  width: 20px;
+  height: 5px;
+  border: 1px solid #333;
+  background: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.indicator.active {
+  background: #1d1d1f;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  padding: 12px 24px;
+  background: white;
+  border: 2px solid #1d1d1f;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1d1d1f;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-tag:hover {
+  background: #1d1d1f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 16px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #1d1d1f;
+}
+
+.btn-primary {
+  background: #1d1d1f;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: white;
+  color: #1d1d1f;
+}
+
+.btn-secondary:hover {
+  background: #f5f5f7;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .carousel {
+    gap: 20px;
+  }
+
+  .product-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .features {
+    gap: 10px;
+  }
+
+  .feature-tag {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 14px 40px;
+    font-size: 15px;
+  }
+}
