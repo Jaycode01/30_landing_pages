@@ -1,5 +1,5 @@
 function updateClock() {
-  const targetDate = new Date("2025-10-17 23:59:59");
+  const targetDate = new Date("2025-10-29 23:59:59");
 
   const now = new Date();
   const diff = targetDate - now;
