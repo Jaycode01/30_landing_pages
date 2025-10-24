@@ -1,12 +1,9 @@
-## 30 Days Builidng Landing Page Challenge
-
-Aspects to focus on for the challenge:
-Aspect One: Master the psychology and conversion principles
-
-Aspect Two: Dive deep into performance optimization
-
-Aspect Three: Focus on advanced CSS and animations
-
-Aspect Four: Polish your process and create case studies
-
-Tool to get exact User behaviour: Hotjar, Crazy Egg
+- <a href="https://appdownloadpage-nu.vercel.app">App download page</a>
+- <a href="https://appointmentbookingpage.vercel.app">Appointment booking page</a>
+- <a href="https://lamborghinirevuelto.vercel.app">Lamborghini revuelto</a>
+- <a href="https://newsletterpage-ashy.vercel.app">Newsletter page</a>
+- <a href="https://preorderpage.vercel.app">Pre-order page</a>
+- <a href="https://pricingpage-xi.vercel.app">Pricing subscription page</a>
+- <a href="https://saaswaitlistpage.vercel.app">Saas waitlist page</a>
+- <a href="https://salescountdownpage.vercel.app">Sales countdown page</a>
+- <a href="https://webinarregistrationpage.vercel.app">Webinar registration page</a>
